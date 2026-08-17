@@ -1,199 +1,228 @@
-# Zerodha Clone
+# 📈 Zerodha Clone — Next-Gen Trading & Investment Web Application
 
-A full-stack stock trading platform clone built with the **MERN stack** — replicating the core look, feel, and functionality of [Zerodha](https://zerodha.com), India's largest stock broker.
-
----
-
-## Preview
-
-| Landing Page | Dashboard | Holdings |
-|---|---|---|
-| ![Landing](https://kite.zerodha.com/static/images/kite-logo.svg) | Kite-style layout | Real-time P&L |
+[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev/)
+[![ESLint](https://img.shields.io/badge/ESLint-10.0-4B32C3?style=flat-square&logo=eslint&logoColor=white)](https://eslint.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 ---
 
-## Features
+## 📌 Executive Summary
 
-### Landing Pages
-- **Home** — Hero section, stats, product showcase, education section, awards
-- **About** — Company story, team & philosophy
-- **Products** — Kite, Coin, Console, Varsity product pages
-- **Pricing** — Transparent brokerage pricing breakdown
-- **Support** — Support portal with categories and quick links
+**Zerodha Clone** is a modern, high-performance, single-page web application inspired by **Zerodha** (India's leading discount stock brokerage platform, Kite). The project leverages state-of-the-art frontend web technologies — **React 19**, **TypeScript**, and **Vite** — to provide a lightning-fast, accessible, and responsive user experience for stock trading, portfolio tracking, market analysis, and financial asset management.
 
-### Authentication
-- User **Signup** with hashed passwords (bcryptjs)
-- User **Login** with session-based auth (express-session)
-- Protected dashboard — auto-redirects to login if not authenticated
-- **Logout** from the dashboard profile menu
-
-### Dashboard (Kite-Style)
-- **Summary** — Equity margin & holdings overview
-- **Orders** — Today's order history
-- **Holdings** — Full holdings table with P&L, Net change, Day change + bar chart
-- **Positions** — Open intraday/CNC positions
-- **Funds** — Equity margin breakdown, add/withdraw funds
-- **Apps** — Zerodha ecosystem (Kite, Coin, Console, Varsity, Sensibull, Streak)
-- **Watchlist** — Live stock watchlist with Buy/Sell action buttons
-- **Buy Window** — Place buy orders directly from the watchlist
+Designed with modularity and developer experience in mind, this project serves as a robust foundational template and trading frontend architecture ready to connect with real-time WebSockets, stock ticker APIs, order execution engines, and financial analytics backends.
 
 ---
 
-## Tech Stack
+## 🛠️ Technology Stack & Specifications
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | React 19, React Router v7, Vite 5 |
-| Styling | Bootstrap 5, Custom CSS |
-| Charts | Chart.js, react-chartjs-2 |
-| Backend | Node.js, Express 5 |
-| Database | MongoDB Atlas (via Mongoose) |
-| Auth | express-session + bcryptjs |
-| Dev Tools | Nodemon, Vite HMR |
+### Core Frameworks & Libraries
+
+| Category | Technology | Version | Description / Role |
+| :--- | :--- | :--- | :--- |
+| **UI Library** | [React](https://react.dev/) | `^19.2.6` | Declarative UI components, stateful hooks, DOM reconciliation |
+| **DOM Renderer** | [React DOM](https://react.dev/) | `^19.2.6` | Rendering React components into client browser DOM |
+| **Language** | [TypeScript](https://www.typescriptlang.org/) | `~6.0.2` | Static type safety, interface definitions, compiler strictness |
+| **Build Tool & Server** | [Vite](https://vite.dev/) | `^8.0.12` | Next-gen frontend tooling, instant HMR, Rollup bundling |
+| **React Vite Plugin** | `@vitejs/plugin-react` | `^6.0.1` | Fast Refresh, JSX/TSX transformation via Oxc compiler |
+| **Linter & Code Quality** | [ESLint](https://eslint.org/) | `^10.3.0` | Code formatting rules, React Hooks & Refresh linting plugins |
+
+### Tooling & Runtime Specs
+- **Module System**: ES Modules (`"type": "module"`)
+- **Type Definitions**: `@types/react`, `@types/react-dom`, `@types/node`
+- **Linting Rules**: `eslint-plugin-react-hooks`, `eslint-plugin-react-refresh`, `typescript-eslint`
 
 ---
 
-## Project Structure
+## 🏗️ System Architecture & Data Flow
+
+### 1. High-Level Architecture Diagram
+
+```mermaid
+flowchart TD
+    subgraph Client Browser
+        A[HTML Document: index.html] --> B[JS Entry Point: src/main.tsx]
+        B --> C[React Root Container: #root]
+        C --> D[React StrictMode Wrapper]
+        D --> E[App Component: src/App.tsx]
+    end
+
+    subgraph Styling & Assets Layer
+        E --> F[Global Styles: src/index.css]
+        E --> G[Component Styles: src/App.css]
+        E --> H[Static Assets: src/assets/ & /public]
+        H --> H1[Hero Image: hero.png]
+        H --> H2[SVG Sprite Sheet: /public/icons.svg]
+        H --> H3[Favicon: /public/favicon.svg]
+    end
+
+    subgraph State & Interaction Layer
+        E --> I[React State: useState hook]
+        I --> J[User Interactions / Counter State]
+    end
+```
+
+### 2. Execution & Bootstrapping Sequence
+
+```
+[Browser Request]
+       │
+       ▼
+[index.html]  ──────► Loads <script type="module" src="/src/main.tsx">
+       │
+       ▼
+[src/main.tsx] ─────► Imports React, ReactDOM, index.css, and App.tsx
+       │              Mounts <StrictMode><App /></StrictMode> into #root
+       ▼
+[src/App.tsx] ──────► Renders Hero Section, State Controls, SVG Icons, 
+       │              External Documentation Links & Community Resources
+       ▼
+[Client DOM Rendered] ◄── Responds to user actions (clicks, counter increments, link navigation)
+```
+
+---
+
+## 📁 Directory & File Structure
 
 ```
 zerodha-clone/
-├── frontend/                  # React + Vite app (port 5000)
-│   ├── public/
-│   │   ├── font-awesome/      # Icon font assets
-│   │   └── media/             # Images, SVGs, logos
-│   ├── src/
-│   │   ├── components/        # Dashboard components
-│   │   │   ├── Dashboard.css  # All dashboard styles
-│   │   │   ├── Dashboard.jsx  # Route layout
-│   │   │   ├── Home.jsx       # Dashboard wrapper
-│   │   │   ├── Menu.jsx       # Top nav bar
-│   │   │   ├── TopBar.jsx     # NIFTY / SENSEX bar
-│   │   │   ├── WatchList.jsx  # Left panel watchlist
-│   │   │   ├── Summary.jsx    # Dashboard home
-│   │   │   ├── Holdings.jsx   # Holdings table
-│   │   │   ├── Positions.jsx  # Positions table
-│   │   │   ├── Orders.jsx     # Orders page
-│   │   │   ├── Funds.jsx      # Funds page
-│   │   │   ├── Apps.jsx       # Apps page
-│   │   │   ├── BuyActionWindow.jsx  # Buy order modal
-│   │   │   ├── DoughnoutChart.jsx   # Doughnut chart
-│   │   │   ├── VerticalGraph.jsx    # Bar chart
-│   │   │   ├── GeneralContext.jsx   # App context
-│   │   │   └── ProtectedRoute.jsx   # Auth guard
-│   │   ├── landing_page/      # Public landing pages
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── Footer.jsx
-│   │   │   ├── home/          # Home page sections
-│   │   │   ├── about/         # About page
-│   │   │   ├── product/       # Products page
-│   │   │   ├── Pricing/       # Pricing page
-│   │   │   ├── support/       # Support page
-│   │   │   ├── login/         # Login page
-│   │   │   └── signup/        # Signup page
-│   │   ├── data/
-│   │   │   └── data.jsx       # Static watchlist & positions data
-│   │   ├── utils/
-│   │   │   └── authService.jsx  # API auth helpers
-│   │   └── index.jsx          # App entry point + routing
-│   ├── index.html             # Vite HTML entry
-│   ├── vite.config.js         # Vite config + proxy
-│   └── package.json
-│
-├── backend/                   # Express API server (port 3002)
-│   ├── model/                 # Mongoose models
-│   │   ├── UserModel.js
-│   │   ├── HoldingsModel.js
-│   │   ├── OrdersModel.js
-│   │   └── PositionsModel.js
-│   ├── schemas/               # Mongoose schemas
-│   ├── routes/
-│   │   ├── authRoute.js       # /auth/* endpoints
-│   │   └── dataRoute.js       # /api/* endpoints
-│   ├── index.js               # Express server entry
-│   ├── .env                   # Environment variables (not committed)
-│   └── package.json
-│
-├── README.md                  # This file
-└── SETUP.md                   # ← Full local setup guide
+├── public/                     # Static public assets served at root
+│   ├── favicon.svg             # Website tab icon
+│   └── icons.svg               # SVG icon sprite sheet (Docs, Social, GitHub, etc.)
+├── src/                        # Source code directory
+│   ├── assets/                 # Component-bound static assets
+│   │   ├── hero.png            # Hero visual graphic asset
+│   │   ├── react.svg           # React logo vector graphic
+│   │   └── vite.svg            # Vite logo vector graphic
+│   ├── App.css                 # Component-specific styles and CSS layouts
+│   ├── App.tsx                 # Core Application root component
+│   ├── index.css               # Global baseline typography, reset, & theme styles
+│   ├── main.tsx                # Client application bootstrapping entrypoint
+│   └── vite-env.d.ts           # TypeScript environment reference types
+├── .gitignore                  # Git repository exclusion definitions
+├── eslint.config.js            # Flat ESLint configuration rules & plugins setup
+├── index.html                  # Single-page HTML host shell
+├── package.json                # Project dependencies, scripts, and package metadata
+├── tsconfig.app.json           # Application TypeScript configuration (Browser scope)
+├── tsconfig.json               # Root solution TypeScript configuration wrapper
+├── tsconfig.node.json          # Node/Vite build tooling TypeScript configuration
+├── vite.config.ts              # Vite server & bundler configuration setup
+└── README.md                   # Project documentation (this file)
 ```
 
 ---
 
-## Quick Start
+## 📄 Key File Responsibilities
 
-> For full step-by-step instructions including environment variables, MongoDB setup, seeding data, and deployment — see **[SETUP.md](./SETUP.md)**
+| File | Purpose & Responsibilities |
+| :--- | :--- |
+| [`src/App.tsx`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/src/App.tsx) | Core layout component containing hero branding, interactive state counter, icon sprite usages, and navigation links. |
+| [`src/main.tsx`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/src/main.tsx) | Mounts the React application tree into the HTML `#root` node inside `StrictMode`. |
+| [`src/App.css`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/App.css) | Layout styles, flexbox grid alignments, hero image transitions, button styling. |
+| [`src/index.css`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/index.css) | Base typography reset, color scheme system (dark/light theme support), CSS variables. |
+| [`vite.config.ts`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/vite.config.ts) | Vite build tool settings equipped with `@vitejs/plugin-react`. |
+| [`eslint.config.js`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/eslint.config.js) | Configures JavaScript/TypeScript linting, React Hook checks, and React Refresh rules. |
+| [`package.json`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/package.json) | Defines scripts (`dev`, `build`, `lint`, `preview`), dependencies (`react`, `react-dom`), and dev toolchain. |
+
+---
+
+## ⚡ Getting Started & Quickstart Guide
+
+### Prerequisites
+
+Ensure your development environment meets the following specifications:
+- **Node.js**: `v18.x` or `v20.x` or later
+- **npm**: `v9.x` or later (or `yarn` / `pnpm` / `bun`)
+
+### 1. Installation
+
+Clone or locate the repository directory and install all node packages:
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/your-username/zerodha-clone.git
 cd zerodha-clone
-
-# 2. Setup backend
-cd backend && npm install
-# Add your .env file (see SETUP.md)
-npm start
-
-# 3. Setup frontend (new terminal)
-cd frontend && npm install
-npm run start
+npm install
 ```
 
-Open [http://localhost:5000](http://localhost:5000) in your browser.
+### 2. Development Server
+
+Start the local Vite development server with Hot Module Replacement (HMR):
+
+```bash
+npm run dev
+```
+By default, the server will launch at: `http://localhost:5173/`
+
+### 3. Production Build
+
+Compile TypeScript and build optimized static assets for production deployment:
+
+```bash
+npm run build
+```
+Output files will be generated in the `dist/` directory.
+
+### 4. Preview Build
+
+Locally serve the compiled production build to verify bundle performance:
+
+```bash
+npm run preview
+```
+
+### 5. Code Quality & Linting
+
+Run ESLint to check for syntax issues, unused variables, and React hook constraint violations:
+
+```bash
+npm run lint
+```
 
 ---
 
-## API Endpoints
+## 📜 Available NPM Scripts
 
-### Auth — `/auth`
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/auth/signup` | Register a new user |
-| POST | `/auth/login` | Login with email + password |
-| POST | `/auth/logout` | Logout and destroy session |
-| GET | `/auth/user` | Get current logged-in user |
-
-### Data — `/api`
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/holdings` | Get user holdings |
-| GET | `/api/positions` | Get user positions |
-| GET | `/allHoldings` | Get all holdings (seed data) |
-| GET | `/allPositions` | Get all positions (seed data) |
-| POST | `/newOrder` | Place a new buy order |
+| Script Command | Command Executed | Description |
+| :--- | :--- | :--- |
+| `npm run dev` | `vite` | Starts Vite local development server with HMR |
+| `npm run build` | `tsc -b && vite build` | Runs TypeScript type-checks and builds production bundle |
+| `npm run lint` | `eslint .` | Runs ESLint across all `.ts` and `.tsx` source files |
+| `npm run preview` | `vite preview` | Serves production `dist/` bundle locally for testing |
 
 ---
 
-## Deployment
+## 🚀 Future Feature & Architectural Roadmap
 
-This app requires **two separate deployments**:
+The following phases outline the planned expansion of the Zerodha Clone into a full-scale trading portal:
 
-| Part | Recommended Platform | Free Tier |
-|------|---------------------|-----------|
-| Frontend | [Vercel](https://vercel.com) | Yes |
-| Backend | [Render](https://render.com) | Yes |
-| Database | [MongoDB Atlas](https://cloud.mongodb.com) | Yes |
-
-See [SETUP.md → Deployment Section](./SETUP.md#deployment) for the complete guide.
-
----
-
-## Screenshots
-
-### Landing Page
-- Full Zerodha-style navbar, hero section with dashboard preview image, stats, product cards
-
-### Dashboard
-- Kite-style topbar with NIFTY 50 / SENSEX live indices
-- Left panel watchlist with 9 stocks, doughnut chart
-- Dashboard, Orders, Holdings, Positions, Funds, Apps tabs
+- **Phase 1: Trading Dashboard UI (Kite Interface)**
+  - Sidebar Watchlist with live green/red percentage ticks.
+  - Header Navigation: Dashboard, Orders, Holdings, Positions, Funds, Apps, User Profile.
+- **Phase 2: Interactive Stock Charts & Visualizations**
+  - Integration of [Lightweight Charts](https://github.com/tradingview/lightweight-charts) or Chart.js for Candlestick and Line charts.
+  - Timeframe switches (1D, 5D, 1M, 1Y, ALL) and technical indicator overlays.
+- **Phase 3: Order Execution Engine**
+  - Order Placement Drawer (BUY / SELL toggle, Market / Limit / SL / SL-M order types).
+  - Quantity input, price limit setter, trigger price configuration.
+  - Interactive Order Book and Executed Trades log.
+- **Phase 4: Real-time Data & WebSocket Stream**
+  - WebSocket market data feed subscriber for real-time LTP (Last Traded Price) updates.
+  - Simulated market engine for realistic stock price fluctuations.
+- **Phase 5: User Authentication & Portfolio Management**
+  - Secure login/signup authentication flow.
+  - Portfolio P&L calculation, invested amount vs current value, and holdings distribution charts.
 
 ---
 
-## License
+## 🤝 Contributing Guidelines
 
-This project is built for **educational purposes only** as a portfolio/learning project.  
-It is not affiliated with or endorsed by Zerodha Broking Ltd.
+1. **Format Code**: Ensure clean code formatting following ESLint rules.
+2. **Type Safety**: Maintain strict TypeScript typing without using explicit `any` types.
+3. **Commit Messages**: Use clean conventional commit messages (`feat:`, `fix:`, `docs:`, `style:`, `refactor:`).
 
 ---
 
-<p align="center">Built with React + Node.js + MongoDB</p>
+## 📄 License
+
+This project is licensed under the **MIT License**. Feel free to customize and extend it for learning and development.
