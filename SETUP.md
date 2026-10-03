@@ -1,4 +1,4 @@
-# Setup Guide — Zerodha Clone
+# Setup Guide — InvestraX
 
 Complete step-by-step instructions to get the project running locally and deploy it to the cloud.
 
@@ -42,8 +42,8 @@ git --version
 ## 2. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/zerodha-clone.git
-cd zerodha-clone
+git clone https://github.com/abhishekk010/InvestraX.git
+cd InvestraX
 ```
 
 The project has two main folders:
@@ -164,7 +164,7 @@ The app falls back to showing seed data from `frontend/src/data/data.jsx` when n
 ### Option B — Manually seed via MongoDB Compass
 1. Download [MongoDB Compass](https://www.mongodb.com/products/compass)
 2. Connect with your Atlas URI
-3. Create a database called `zerodhaDB`
+3. Create a database called `investraxDB`
 4. Create collections: `holdings`, `positions`, `orders`
 5. Insert sample documents matching the schema in `backend/schemas/`
 

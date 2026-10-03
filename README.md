@@ -10,7 +10,7 @@
 
 ## 📌 Executive Summary
 
-**InvestraX** is a modern, high-performance, single-page web application inspired by **Zerodha** (India's leading discount stock brokerage platform, Kite). The project leverages state-of-the-art frontend web technologies — **React 19**, **TypeScript**, and **Vite** — to provide a lightning-fast, accessible, and responsive user experience for stock trading, portfolio tracking, market analysis, and financial asset management.
+**InvestraX** is a modern, high-performance, single-page web application inspired by **InvestraX** (India's leading discount stock brokerage platform, Kite). The project leverages state-of-the-art frontend web technologies — **React 19**, **TypeScript**, and **Vite** — to provide a lightning-fast, accessible, and responsive user experience for stock trading, portfolio tracking, market analysis, and financial asset management.
 
 Designed with modularity and developer experience in mind, this project serves as a robust foundational template and trading frontend architecture ready to connect with real-time WebSockets, stock ticker APIs, order execution engines, and financial analytics backends.
 
@@ -87,7 +87,7 @@ flowchart TD
 ## 📁 Directory & File Structure
 
 ```
-zerodha-clone/
+InvestraX/
 ├── public/                     # Static public assets served at root
 │   ├── favicon.svg             # Website tab icon
 │   └── icons.svg               # SVG icon sprite sheet (Docs, Social, GitHub, etc.)
@@ -118,13 +118,13 @@ zerodha-clone/
 
 | File | Purpose & Responsibilities |
 | :--- | :--- |
-| [`src/App.tsx`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/src/App.tsx) | Core layout component containing hero branding, interactive state counter, icon sprite usages, and navigation links. |
-| [`src/main.tsx`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/src/main.tsx) | Mounts the React application tree into the HTML `#root` node inside `StrictMode`. |
-| [`src/App.css`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/App.css) | Layout styles, flexbox grid alignments, hero image transitions, button styling. |
-| [`src/index.css`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/index.css) | Base typography reset, color scheme system (dark/light theme support), CSS variables. |
-| [`vite.config.ts`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/vite.config.ts) | Vite build tool settings equipped with `@vitejs/plugin-react`. |
-| [`eslint.config.js`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/eslint.config.js) | Configures JavaScript/TypeScript linting, React Hook checks, and React Refresh rules. |
-| [`package.json`](file:///c:/Users/singh/.gemini/antigravity/scratch/zerodha-clone/package.json) | Defines scripts (`dev`, `build`, `lint`, `preview`), dependencies (`react`, `react-dom`), and dev toolchain. |
+| [`src/App.tsx`](file:///c:/Users/singh/.gemini/antigravity/scratch/InvestraX/src/App.tsx) | Core layout component containing hero branding, interactive state counter, icon sprite usages, and navigation links. |
+| [`src/main.tsx`](file:///c:/Users/singh/.gemini/antigravity/scratch/InvestraX/src/main.tsx) | Mounts the React application tree into the HTML `#root` node inside `StrictMode`. |
+| [`src/App.css`](file:///c:/Users/singh/.gemini/antigravity/scratch/InvestraX/App.css) | Layout styles, flexbox grid alignments, hero image transitions, button styling. |
+| [`src/index.css`](file:///c:/Users/singh/.gemini/antigravity/scratch/InvestraX/index.css) | Base typography reset, color scheme system (dark/light theme support), CSS variables. |
+| [`vite.config.ts`](file:///c:/Users/singh/.gemini/antigravity/scratch/InvestraX/vite.config.ts) | Vite build tool settings equipped with `@vitejs/plugin-react`. |
+| [`eslint.config.js`](file:///c:/Users/singh/.gemini/antigravity/scratch/InvestraX/eslint.config.js) | Configures JavaScript/TypeScript linting, React Hook checks, and React Refresh rules. |
+| [`package.json`](file:///c:/Users/singh/.gemini/antigravity/scratch/InvestraX/package.json) | Defines scripts (`dev`, `build`, `lint`, `preview`), dependencies (`react`, `react-dom`), and dev toolchain. |
 
 ---
 
