@@ -16,7 +16,7 @@ function Universe() {
         <div className="col-md-4 p-3 mb-4 d-flex flex-column align-items-center">
           <div style={{ height: "55px", display: "flex", alignItems: "center" }}>
             <img 
-              src="/media/smallcaseLogo.png" 
+              src="/media/InvestraX.png" 
               alt="Smallcase" 
               style={{ maxHeight: "40px", width: "auto", objectFit: "contain" }} 
             />
@@ -29,7 +29,7 @@ function Universe() {
         <div className="col-md-4 p-3 mb-4 d-flex flex-column align-items-center">
           <div style={{ height: "55px", display: "flex", alignItems: "center" }}>
             <img 
-              src="/media/streakLogo.png" 
+              src="/media/InvestraX.png" 
               alt="Streak" 
               style={{ maxHeight: "35px", width: "auto", objectFit: "contain" }} 
             />
@@ -42,7 +42,7 @@ function Universe() {
         <div className="col-md-4 p-3 mb-4 d-flex flex-column align-items-center">
           <div style={{ height: "55px", display: "flex", alignItems: "center" }}>
             <img 
-              src="/media/sensibullLogo.svg" 
+              src="/media/InvestraX.png" 
               alt="Sensibull" 
               style={{ maxHeight: "35px", width: "auto", objectFit: "contain" }} 
             />
@@ -54,7 +54,7 @@ function Universe() {
         <div className="col-md-4 p-3 mb-4 d-flex flex-column align-items-center">
           <div style={{ height: "55px", display: "flex", alignItems: "center" }}>
             <img 
-              src="/media/investraxFundhouse.png" 
+              src="/media/InvestraX.png" 
               alt="InvestraX Fund House" 
               style={{ maxHeight: "45px", width: "auto", objectFit: "contain" }} 
             />
@@ -67,7 +67,7 @@ function Universe() {
         <div className="col-md-4 p-3 mb-4 d-flex flex-column align-items-center">
           <div style={{ height: "55px", display: "flex", alignItems: "center" }}>
             <img 
-              src="/media/goldenpiLogo.png" 
+              src="/media/InvestraX.png" 
               alt="GoldenPi" 
               style={{ maxHeight: "40px", width: "auto", objectFit: "contain" }} 
             />
@@ -80,7 +80,7 @@ function Universe() {
         <div className="col-md-4 p-3 mb-4 d-flex flex-column align-items-center">
           <div style={{ height: "55px", display: "flex", alignItems: "center" }}>
             <img 
-              src="/media/dittoLogo.png" 
+              src="/media/InvestraX.png" 
               alt="Ditto" 
               style={{ maxHeight: "40px", width: "auto", objectFit: "contain" }} 
             />

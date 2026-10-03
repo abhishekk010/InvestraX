@@ -23,7 +23,7 @@ function Navbar() {
       <div className="container">
 
         <Link className="navbar-brand" to="/">
-          <img src="/media/InvestraX.png" alt="Logo" style={{ width: "140px" }} />
+          <img src="/media/InvestraX.png" alt="Logo" style={{ width: "180px" }} />
         </Link>
 
         <button
