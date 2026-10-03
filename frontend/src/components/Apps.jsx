@@ -6,28 +6,28 @@ const appsData = [
     description: "Fast and elegant trading platform",
     color: "#f56834",
     letter: "K",
-    icon: "https://kite.zerodha.com/static/images/kite-logo.svg",
+    icon: "https://kite.investrax.com/static/images/kite-logo.svg",
   },
   {
     name: "Coin",
     description: "Direct mutual fund investments",
     color: "#387ed1",
     letter: "C",
-    icon: "https://coin.zerodha.com/assets/images/coin-logo.svg",
+    icon: "https://coin.investrax.com/assets/images/coin-logo.svg",
   },
   {
     name: "Console",
     description: "Portfolio and reporting dashboard",
     color: "#8e44ad",
     letter: "Co",
-    icon: "https://zerodha.com/static/images/products/console.svg",
+    icon: "https://investrax.com/static/images/products/console.svg",
   },
   {
     name: "Varsity",
     description: "Learn stock market for free",
     color: "#2980b9",
     letter: "V",
-    icon: "https://zerodha.com/static/images/products/varsity.png",
+    icon: "https://investrax.com/static/images/products/varsity.png",
   },
   {
     name: "Sensibull",
@@ -49,7 +49,7 @@ const Apps = () => {
   return (
     <div className="apps-page">
       <h3 className="dashboard-page-title">Apps</h3>
-      <p className="apps-subtitle">Explore Zerodha's ecosystem of trading and investment apps</p>
+      <p className="apps-subtitle">Explore InvestraX's ecosystem of trading and investment apps</p>
       <div className="apps-grid">
         {appsData.map((app, index) => (
           <div key={index} className="app-card">

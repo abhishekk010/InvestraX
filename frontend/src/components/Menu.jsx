@@ -21,7 +21,7 @@ const Menu = () => {
   return (
     <div className="menu-container">
       <img
-        src="https://kite.zerodha.com/static/images/kite-logo.svg"
+        src="https://kite.investrax.com/static/images/kite-logo.svg"
         alt="Kite"
         style={{ width: "30px", height: "30px", objectFit: "contain", marginRight: "4px" }}
       />

@@ -14,7 +14,7 @@ function Footer() {
           <div className="col-lg-3 col-md-6 mb-4">
             <img
               src="/media/logo.svg"
-              alt="Zerodha Logo"
+              alt="InvestraX Logo"
               style={{ width: "55%" }}
               className="mb-3"
             />
@@ -26,7 +26,7 @@ function Footer() {
                 lineHeight: "1.8",
               }}
             >
-              &copy; 2010 - 2026, Zerodha Broking Ltd.
+              &copy; 2010 - 2026, InvestraX Broking Ltd.
               <br />
               All rights reserved.
             </p>
@@ -124,8 +124,8 @@ function Footer() {
               "Philosophy",
               "Press & media",
               "Careers",
-              "Zerodha Cares (CSR)",
-              "Zerodha.tech",
+              "InvestraX Cares (CSR)",
+              "InvestraX.tech",
               "Open source",
               "Referral program",
             ].map((item, index) => (
@@ -177,10 +177,10 @@ function Footer() {
               lineHeight: "1.8",
             }}
           >
-            Zerodha Broking Ltd.: Member of NSE, BSE, MCX & MSEI – SEBI
+            InvestraX Broking Ltd.: Member of NSE, BSE, MCX & MSEI – SEBI
             Registration no.: INZ000031633 CDSL/NSDL: Depository services
-            through Zerodha Broking Ltd. – SEBI Registration no.:
-            IN-DP-431-2019 Registered Address: Zerodha Broking Ltd.,
+            through InvestraX Broking Ltd. – SEBI Registration no.:
+            IN-DP-431-2019 Registered Address: InvestraX Broking Ltd.,
             #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public
             School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka,
             India.

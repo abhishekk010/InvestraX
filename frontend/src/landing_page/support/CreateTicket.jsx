@@ -30,7 +30,7 @@ const CreateTicket = () => {
     },
     { 
       id: 2, 
-      title: 'Your Zerodha Account', 
+      title: 'Your InvestraX Account', 
       links: [
         'Your Profile',
         'Account modification',

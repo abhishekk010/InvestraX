@@ -22,7 +22,7 @@ app.set("trust proxy", 1);
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://zerodhaclone01.vercel.app",
+    "https://investraxclone01.vercel.app",
   ],
   credentials: true,
 }));
@@ -31,7 +31,7 @@ app.use(bodyParser.json());
 app.set("trust proxy", 1);
 
 app.use(session({
-  secret: process.env.SESSION_SECRET || "zerodha-secret-key-2024",
+  secret: process.env.SESSION_SECRET || "investrax-secret-key-2024",
   resave: false,
   saveUninitialized: false,
   cookie: {

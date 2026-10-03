@@ -35,9 +35,9 @@ function FounderSection() {
         {/* Right Column: Detailed Bio */}
         <div className="col-md-7 px-4 px-md-5">
           <p className="mb-4">
-            Nithin bootstrapped and founded Zerodha in 2010 to overcome the
+            Nithin bootstrapped and founded InvestraX in 2010 to overcome the
             hurdles he faced during his decade long stint as a trader. Today,
-            Zerodha has changed the landscape of the Indian broking industry.
+            InvestraX has changed the landscape of the Indian broking industry.
           </p>
           <p className="mb-4">
             He is a member of the SEBI Secondary Market Advisory Committee

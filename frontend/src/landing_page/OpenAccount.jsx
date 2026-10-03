@@ -7,7 +7,7 @@ function OpenAccount() {
             <div className='row text-center'>
 
                 <h1 className='mt-5'>
-                    Open a Zerodha account
+                    Open a InvestraX account
                 </h1>
 
                 <p>

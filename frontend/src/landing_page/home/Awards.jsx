@@ -14,7 +14,7 @@ function Awards() {
 
         <div className='col-6 p-5 mt-5'>
           <h1>Largest stock broker in India</h1>
-          <p className='mb-5'>2+ million zerodha client contribute to over 15% of all retail order 
+          <p className='mb-5'>2+ million investrax client contribute to over 15% of all retail order 
             volumes in india daily by trading and investing in:</p>
             <div className='row'>
               <div className='col-6'><ul>

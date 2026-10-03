@@ -6,7 +6,7 @@ function Universe() {
       <div className="row justify-content-center align-items-center">
         {/* Section Heading */}
         <h1 className="display-6 fw-normal mb-3" style={{ color: "#424242" }}>
-          The Zerodha Universe
+          The InvestraX Universe
         </h1>
         <p className="text-muted mb-5 fs-6" style={{ color: "#666" }}>
           Extend your trading and investment experience even further with our partner platforms
@@ -54,8 +54,8 @@ function Universe() {
         <div className="col-md-4 p-3 mb-4 d-flex flex-column align-items-center">
           <div style={{ height: "55px", display: "flex", alignItems: "center" }}>
             <img 
-              src="/media/zerodhaFundhouse.png" 
-              alt="Zerodha Fund House" 
+              src="/media/investraxFundhouse.png" 
+              alt="InvestraX Fund House" 
               style={{ maxHeight: "45px", width: "auto", objectFit: "contain" }} 
             />
           </div>

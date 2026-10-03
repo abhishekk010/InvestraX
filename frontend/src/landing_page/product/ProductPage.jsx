@@ -24,7 +24,7 @@ function ProductPage() {
       <RightSection
         imageURL="media/console.png"
         productName="Console"
-        productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations. "
+        productDescription="The central dashboard for your InvestraX account. Gain insights into your trades and investments with in-depth reports and visualisations. "
         learnMore="#"
       />
       <LeftSection
@@ -55,7 +55,7 @@ function ProductPage() {
   Want to know more about our technology stack? Check out the{" "}
   
   <a href="" className="text-decoration-none">
-    Zerodha.tech
+    InvestraX.tech
   </a>
   {" "}blog.
 </p>

@@ -13,7 +13,7 @@ function Stats() {
                     <h2 className='fs-4'>Customer-first always</h2>
 
                     <p className='text-muted'>
-                        That's why 1.6+ crore customers trust Zerodha
+                        That's why 1.6+ crore customers trust InvestraX
                         with ~ ₹6 lakh crores of equity investments,
                         making us India's largest broker; contributing
                         to 15% of daily retail exchange volumes in India.
@@ -27,7 +27,7 @@ function Stats() {
                         use at your pace, the way you like.
                     </p>
 
-                    <h2 className='fs-4'>The Zerodha universe</h2>
+                    <h2 className='fs-4'>The InvestraX universe</h2>
 
                     <p className='text-muted'>
                         Not just an app, but a whole ecosystem.
